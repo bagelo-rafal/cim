@@ -19995,6 +19995,7 @@ address p {
     font-size: 25px;
     letter-spacing: -1px;
     color: #031a61;
+    display: flex;
 }
 .sidebar .sidebar-header .sidebar-brand span {
     color: #f9bf27;
