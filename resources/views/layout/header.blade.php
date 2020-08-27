@@ -5,12 +5,7 @@
   <div class="navbar-content">
     <form class="search-form">
       <div class="input-group">
-        <div class="input-group-prepend">
-          <div class="input-group-text">
-            <i data-feather="search"></i>
-          </div>
-        </div>
-        <input type="text" class="form-control" id="navbarForm" placeholder="Search here...">
+        <h5>{{$title}}</h5>
       </div>
     </form>
     <ul class="navbar-nav">
@@ -54,7 +49,7 @@
                 <div class="d-flex justify-content-between align-items-center">
                   <p>Leonardo Payne</p>
                   <p class="sub-text text-muted">2 min ago</p>
-                </div>	
+                </div>
                 <p class="sub-text text-muted">Project status</p>
               </div>
             </a>
@@ -66,7 +61,7 @@
                 <div class="d-flex justify-content-between align-items-center">
                   <p>Carl Henson</p>
                   <p class="sub-text text-muted">30 min ago</p>
-                </div>	
+                </div>
                 <p class="sub-text text-muted">Client meeting</p>
               </div>
             </a>
@@ -76,9 +71,9 @@
               </div>
               <div class="content">
                 <div class="d-flex justify-content-between align-items-center">
-                  <p>Jensen Combs</p>												
+                  <p>Jensen Combs</p>
                   <p class="sub-text text-muted">1 hrs ago</p>
-                </div>	
+                </div>
                 <p class="sub-text text-muted">Project updates</p>
               </div>
             </a>
