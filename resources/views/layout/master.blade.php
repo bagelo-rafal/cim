@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Cud i Miód - system zarządzania cateringiem dietetycznym</title>
+  <title>{{$title}} - Cud i Miód - system zarządzania cateringiem dietetycznym</title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,6 +14,8 @@
   <!-- plugin css -->
   {!! Html::style('/assets/fonts/feather-font/css/iconfont.css') !!}
   {!! Html::style('/assets/plugins/perfect-scrollbar/perfect-scrollbar.css') !!}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>  <!-- end common css -->
+
   <!-- end plugin css -->
 
   @stack('plugin-styles')
@@ -54,5 +56,13 @@
     <!-- end common js -->
 
     @stack('custom-scripts')
+    {!! Html::script('js/datepicker-config.js') !!}
+    {!! Html::script('js/datatables-config.js') !!}
+    {!! Html::script('js/select2-config.js') !!}
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/pdfmake.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/dt/jszip-2.5.0/dt-1.10.21/b-1.6.3/b-colvis-1.6.3/b-flash-1.6.3/b-html5-1.6.3/b-print-1.6.3/r-2.2.5/datatables.min.js"></script>
+
 </body>
 </html>

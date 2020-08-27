@@ -1,7 +1,7 @@
 <nav class="sidebar">
   <div class="sidebar-header">
-    <a href="#" class="sidebar-brand">
-      <img height="50px;" src="https://www.cudimiod.pl/wp-content/uploads/2016/12/logo-04.19.png" /><span style="padding-top:5px;">CRM</span>
+    <a href="/" class="sidebar-brand">
+      <img style="margin-right:5px;" height="50px;" src="https://www.cudimiod.pl/wp-content/uploads/2016/12/logo-04.19.png" /><span style="padding-top: 4px;">CRM</span>
     </a>
     <div class="sidebar-toggler not-active">
       <span></span>
