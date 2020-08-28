@@ -1,13 +1,13 @@
 /* Toggle pól filtrowania */
 
 $('body').on('click', '.search-toggle', function() {
-  $('.filter-column').toggle();
+    $('.filter-column').toggle();
 });
 
-/* Customers Table */
+/* Tabela z klientami */
 
 $(document).ready(function() {
-    var table = $('#customers-table').DataTable({
+    var table = $('#customers-table, #diets-table').DataTable({
         "language": {
             "url": "https://cdn.datatables.net/plug-ins/1.10.20/i18n/Polish.json"
         },
@@ -31,20 +31,20 @@ $(document).ready(function() {
         ]
     });
 
-    // Filtrowanie po kolumnach
+    /* Filtrowanie po kolumnach */
 
-    $('#customers-table thead tr').clone(true).appendTo('#customers-table thead').addClass("filter-column");
-    $('#customers-table thead tr:eq(1) th').each(function(i) {
-      var title = $(this).text();
-      $(this).html('<input class="column-search" type="text" placeholder="' + title + '" />');
+    $('thead tr').clone(true).appendTo('thead').addClass("filter-column");
+    $('thead tr:eq(1) th').each(function(i) {
+        var title = $(this).text();
+        $(this).html('<input class="column-search" type="text" placeholder="' + title + '" />');
 
-      $('input', this).on('keyup change', function() {
-        if (table.column(i).search() !== this.value) {
-          table
-            .column(i)
-            .search(this.value)
-            .draw();
-        }
-      });
+        $('input', this).on('keyup change', function() {
+            if (table.column(i).search() !== this.value) {
+                table
+                    .column(i)
+                    .search(this.value)
+                    .draw();
+            }
+        });
     });
 });

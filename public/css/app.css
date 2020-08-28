@@ -1,4 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Overpass:300, 400, 600, 700, 800, 900&display=swap);
+@media only screen and (max-width:47.9375em) {
+    .col-md-3-5 {
+        max-width: 100%;
+        padding-right: 0.75rem;
+        padding-left: 0.75rem;
+        width: 100%;
+    }
+}
 @-webkit-keyframes flash {
     0% {
         opacity: 1;
@@ -26405,9 +26413,15 @@ div.tagsinput span.tag a {
 .filter-column {
     display: none;
 }
-#customers-table_filter {
-    display: none;
+.dataTables_filter {
+    display: none !important;
 }
 .select2.select2-container {
     width: 100% !important;
+}
+.col-md-3-5 {
+  max-width: 100%;
+  padding-right: 0.75rem;
+padding-left: 0.75rem;
+width: 20%;
 }
