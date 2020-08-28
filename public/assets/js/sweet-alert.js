@@ -2,13 +2,7 @@ $(function() {
 
   showSwal = function(type) {
   'use strict';
-    if (type === 'basic') {
-      swal.fire({
-        text: 'Any fool can use a computer',
-        confirmButtonText: 'Close',
-        confirmButtonClass: 'btn btn-danger',
-      })
-    } else if (type === 'title-and-text') {
+    if (type === 'title-and-text') {
       Swal.fire(
         'The Internet?',
         'That thing is still around?',
@@ -56,21 +50,21 @@ $(function() {
         },
         buttonsStyling: false,
       })
-      
+
       swalWithBootstrapButtons.fire({
-        title: 'Are you sure?',
-        text: "You won't be able to revert this!",
+        title: 'Czy jesteś pewien?',
+        text: "Usunięcie tego elementu jest nieodwracalne!",
         icon: 'warning',
         showCancelButton: true,
         confirmButtonClass: 'ml-2',
-        confirmButtonText: 'Yes, delete it!',
-        cancelButtonText: 'No, cancel!',
+        confirmButtonText: 'Tak, usuń to!',
+        cancelButtonText: 'Nie, wróć!',
         reverseButtons: true
       }).then((result) => {
         if (result.value) {
           swalWithBootstrapButtons.fire(
-            'Deleted!',
-            'Your file has been deleted.',
+            'Usunięto!',
+            'Wybrany element został usunięty',
             'success'
           )
         } else if (
@@ -78,8 +72,8 @@ $(function() {
           result.dismiss === Swal.DismissReason.cancel
         ) {
           swalWithBootstrapButtons.fire(
-            'Cancelled',
-            'Your imaginary file is safe :)',
+            'Anulowano operację',
+            'wybrany element nie został usunięty :)',
             'error'
           )
         }
@@ -161,7 +155,7 @@ $(function() {
         showConfirmButton: false,
         timer: 1113000
       });
-      
+
       Toast.fire({
         icon: 'success',
         title: 'Signed in successfully'

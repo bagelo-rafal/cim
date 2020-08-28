@@ -1,3 +1,4 @@
+{{-- W tym widoku wyświetlamy listę pwszystkich klientów + możemy edytować/dodawać klientów w modalach --}}
 @extends('layout.master')
 
 @push('plugin-styles')
@@ -26,7 +27,7 @@
     </div>
 </div>
 
-/* Modal edycja klienta */
+{{-- Modal edycja klienta --}}
 
 <div class="modal fade customer-edit-modal" role="dialog" aria-labelledby="editCustomerModal" aria-hidden="true">
     <div class="modal-dialog modal-xl">
@@ -39,6 +40,7 @@
                     </button>
                 </div>
                 <div class="modal-body">
+                    <input type='hidden' name='id' value='2'>
                     @include('pages.partials.customers.form-modal')
                 </div>
                 <div class="modal-footer">
@@ -50,7 +52,7 @@
     </div>
 </div>
 
-/* Modal dodawanie klienta */
+{{-- Modal dodawanie klienta --}}
 
 <div class="modal fade customer-add-modal" role="dialog" aria-labelledby="addCustomerModal" aria-hidden="true">
     <div class="modal-dialog modal-xl">

@@ -16,7 +16,11 @@ Routy administratora
 */
 
 Route::group(['prefix' => 'dashboard'], function(){
-    Route::get('customers', function () { return view('pages.modules.customers.view', ['title' => "Wszyscy klienci"]); });
+    Route::get('customers', function () { return view('pages.modules.customers.index', ['title' => "Zarządzanie klientami"]); });
+});
+
+Route::group(['prefix' => 'settings'], function(){
+    Route::get('dictionary', function () { return view('pages.modules.settings.dictionary', ['title' => "Słownik"]); });
 });
 
 /*
