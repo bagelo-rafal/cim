@@ -2229,7 +2229,7 @@ th {
     text-align: inherit;
 }
 label {
-    display: inline-block;
+    display: block;
     margin-bottom: 0.5rem;
 }
 button {
@@ -3808,7 +3808,7 @@ pre code {
 select {
     display: block;
     width: 100%;
-    height: calc(1.5em + 0.75rem + 2px);
+    height: calc(1.5em + 0.75rem - 1px);
     padding: 0.5rem 1rem;
     line-height: 1;
     color: #495057;
@@ -26407,4 +26407,7 @@ div.tagsinput span.tag a {
 }
 #customers-table_filter {
     display: none;
+}
+.select2.select2-container {
+    width: 100% !important;
 }

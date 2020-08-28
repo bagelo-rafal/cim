@@ -14,6 +14,9 @@
   <!-- plugin css -->
   {!! Html::style('/assets/fonts/feather-font/css/iconfont.css') !!}
   {!! Html::style('/assets/plugins/perfect-scrollbar/perfect-scrollbar.css') !!}
+  {!! Html::style('/assets/plugins/select2/select2.min.css') !!}
+  {!! Html::style('/assets/plugins/bootstrap-datepicker/bootstrap-datepicker.min.css') !!}
+  {!! Html::style('/assets/plugins/datatables-net/dataTables.bootstrap4.css') !!}
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>  <!-- end common css -->
 
   <!-- end plugin css -->
@@ -49,6 +52,10 @@
 
     <!-- plugin js -->
     @stack('plugin-scripts')
+
+    {!! Html::script('/assets/plugins/select2/select2.min.js') !!}
+    {!! Html::script('/assets/plugins/bootstrap-datepicker/bootstrap-datepicker.min.js') !!}
+
     <!-- end plugin js -->
 
     <!-- common js -->
@@ -59,6 +66,7 @@
     {!! Html::script('js/datepicker-config.js') !!}
     {!! Html::script('js/datatables-config.js') !!}
     {!! Html::script('js/select2-config.js') !!}
+    {!! Html::script('js/custom-scripts.js') !!}
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/pdfmake.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js"></script>
