@@ -15,7 +15,7 @@
       <div class="card">
         <div class="row">
           <div class="col-md-12 pl-md-0">
-            <div class="auth-form-wrapper py-5">
+            <div class="auth-form-wrapper py-5 mx-5">
               <a href="#" class="noble-ui-logo d-block mb-2">Reset hasła</a>
               <h5 class="text-muted font-weight-normal mb-4">Jeśli zapomniałeś/aś swojego hasła, wpisz poniżej adres e-mail na jaki masz zarejestrowane konto, a wyślemy na niego link do resetu hasła.</h5>
               <form id="password-reset" class="forms-sample" action="" method="POST">

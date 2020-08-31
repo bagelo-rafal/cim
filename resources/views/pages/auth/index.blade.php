@@ -24,6 +24,7 @@
                 <div class="mt-3">
                   <button type="submit" class="btn btn-primary mr-2 mb-2 mb-md-0">Zaloguj się</button>
                 </div>
+                <a href="{{ url('/auth/reset') }}" class="d-block mt-3 text-muted">Nie pamiętam hasła</a>
                 <a href="{{ url('/auth/register') }}" class="d-block mt-3 text-muted">Nie masz konta? Zarejestruj się!</a>
               </form>
             </div>
