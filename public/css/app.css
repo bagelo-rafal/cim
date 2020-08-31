@@ -3499,6 +3499,10 @@ pre code {
     vertical-align: top;
     border-top: 1px solid #e8ebf1;
 }
+.review-td {
+  white-space: pre-wrap !important;
+  word-wrap: break-word !important;
+}
 .table thead th {
     vertical-align: bottom;
     border-bottom: 2px solid #e8ebf1;
