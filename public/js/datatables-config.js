@@ -7,15 +7,15 @@ $('body').on('click', '.search-toggle', function() {
 /* Tabela z klientami */
 
 $(document).ready(function() {
-    var table = $('#customers-table, #diets-table').DataTable({
+    var table = $('#customers-table, #diets-table, #reviews-table').DataTable({
         "language": {
             "url": "https://cdn.datatables.net/plug-ins/1.10.20/i18n/Polish.json"
         },
         dom: 'Bfrtip',
         orderCellsTop: true,
         scrollX: false,
-        fixedHeader: true,
-        responsive: true,
+        fixedHeader: false,
+        responsive: false,
         searching: true,
         filtering: false,
         paging: true,
