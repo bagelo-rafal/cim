@@ -1,12 +1,4 @@
 @import url(https://fonts.googleapis.com/css?family=Overpass:300, 400, 600, 700, 800, 900&display=swap);
-@media only screen and (max-width:47.9375em) {
-    .col-md-3-5 {
-        max-width: 100%;
-        padding-right: 0.75rem;
-        padding-left: 0.75rem;
-        width: 100%;
-    }
-}
 @-webkit-keyframes flash {
     0% {
         opacity: 1;
@@ -26424,4 +26416,13 @@ div.tagsinput span.tag a {
   padding-right: 0.75rem;
 padding-left: 0.75rem;
 width: 20%;
+}
+@media only screen and (max-width:47.9375em) {
+    .col-md-3-5 {
+        max-width: 100%;
+        padding-right: 0.75rem;
+        padding-left: 0.75rem;
+        width: 100%;
+        margin-bottom: 10px;
+    }
 }
