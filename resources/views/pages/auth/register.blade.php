@@ -2,7 +2,6 @@
 
 @section('content')
 
-
 <div class="page-content d-flex align-items-center justify-content-center">
 
     <div class="row w-100 mx-0 auth-page">
@@ -16,85 +15,9 @@
                                 <h3 class="mb-4 mt-3">Załóż nowe konto w Cud i Miód</h3>
                             </div>
                             <form id="register-form" class="forms-sample" method="post">
-                                @csrf
-                                <div class="data1 mb-3">
-                                    <div class="row">
-                                        <div class="col-md-12 mb-3">
-                                            <h4>Podstawowe dane kontaktowe</h4>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <div class="form-group">
-                                                <label for="customer_firstname">Imię</label>
-                                                <input type="text" class="form-control" name="first_name" id="customer_firstname" placeholder="Wpisz tutaj..." required>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <div class="form-group">
-                                                <label for="customer_lastname">Nazwisko</label>
-                                                <input type="text" class="form-control" name="last_name" id="customer_lastname" placeholder="Wpisz tutaj..." required>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <div class="form-group">
-                                                <label for="customer_firstname">Hasło</label>
-                                                <input type="password" class="form-control" name="password" id="customer_password" placeholder="Wpisz tutaj..." required>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <div class="form-group">
-                                                <label for="customer_lastname">Potwierdź hasło</label>
-                                                <input type="password" class="form-control" name="password_confirmation" id="customer_password_confirmation" placeholder="Wpisz tutaj..." required>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <div class="form-group">
-                                                <label for="customer_email">Adres e-mail</label>
-                                                <input type="email" class="form-control" name="email" id="customer_email" placeholder="Wpisz tutaj..." required>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <div class="form-group">
-                                                <label for="customer_phone">Telefon</label>
-                                                <input type="text" class="form-control" name="phone" id="customer_phone" placeholder="Wpisz tutaj..." required>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="data1">
-                                    <div class="row">
-                                        <div class="col-md-12 mb-3">
-                                            <h4>Domyślny adres dostawy</h4>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <div class="form-group">
-                                                <label for="delivery_postcode">Kod pocztowy</label>
-                                                <select name="delivery_postcode" class="js-example-basic-single w-100">
-                                                    <option value="">78-400</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <div class="form-group">
-                                                <label for="delivery_city">Miejscowość</label>
-                                                <select name="delivery_city" class="js-example-basic-single w-100">
-                                                    <option value="">Szczecinek</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <div class="form-group">
-                                                <label>Adres</label>
-                                                <select name="delivery_address" class="js-example-basic-single w-100">
-                                                    <option value="">Kopernika 17A/3</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+
+                                @include('pages.partials.auth.register-form')
+
                                 <div class="row zgody mt-3">
                                     <div class="col-sm-12">
                                         <div class="form-group">
@@ -126,7 +49,7 @@
                                     </div>
                                 </div>
                                 <div class="mt-3">
-                                    <button type="submit" class="btn btn-primary mr-2 mb-2 mb-md-0">Zarejestruj się</button>
+                                    <button type="submit" class="btn btn-primary mr-2 mb-2 mb-md-0">Zarejestruj konto</button>
                                 </div>
                                 <a href="{{ url('/auth/') }}" class="d-block mt-3 text-muted">Masz już konto? Zaloguj się</a>
                             </form>
@@ -136,6 +59,19 @@
             </div>
         </div>
     </div>
-
 </div>
+<script>
+    $ = jQuery;
+    $('.company-data').hide();
+
+    $('input[name="invoice_enable"]').change(function() {
+        if ($(this).is(':checked')) {
+            $('.company-data').show();
+            $('.company-data input').prop('required', true);
+        } else {
+            $('.company-data').hide();
+            $('.company-data input').prop('required', false);
+        }
+    });
+</script>
 @endsection

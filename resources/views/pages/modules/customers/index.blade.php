@@ -41,11 +41,11 @@
                 </div>
                 <div class="modal-body">
                     <input type='hidden' name='id' value='2'>
-                    @include('pages.partials.customers.form-modal')
+                    @include('pages.partials.auth.register-form')
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Zamknij</button>
-                    <button type="button" class="btn btn-primary">Zapisz zmiany</button>
+                    <button type="submit" class="btn btn-primary">Zapisz zmiany</button>
                 </div>
             </form>
         </div>
@@ -65,11 +65,11 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    @include('pages.partials.customers.form-modal')
+                    @include('pages.partials.auth.register-form')
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Zamknij</button>
-                    <button type="button" class="btn btn-primary">Dodaj klienta</button>
+                    <button type="submit" class="btn btn-primary">Dodaj klienta</button>
                 </div>
             </form>
         </div>

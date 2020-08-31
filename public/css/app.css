@@ -26475,3 +26475,52 @@ width: 20%;
 .alert.alert-danger.error.show {
     display: block;
 }
+.input-frame::before {
+    border-color: #f9bf27;
+    content: "";
+    width: 18px;
+    height: 18px;
+    border-radius: 2px;
+    border: 2px solid #f9bf27;
+    border-top-color: rgb(249, 191, 39);
+    border-right-color: rgb(249, 191, 39);
+    border-bottom-color: rgb(249, 191, 39);
+    border-left-color: rgb(249, 191, 39);
+    -webkit-transition: all;
+    transition: all;
+    transition-duration: 0s;
+    transition-duration: 0s;
+    -webkit-transition-duration: 0.25s;
+    transition-duration: 0.25s;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.input-frame::after {
+    -webkit-transition: all;
+    transition: all;
+    transition-duration: 0s;
+    transition-duration: 0s;
+    -webkit-transition-duration: 0.25s;
+    transition-duration: 0.25s;
+    font-family: feather;
+    content: "\E83F";
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    font-size: 0.9375rem;
+    font-weight: 700;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.form-check-input {
+    position: absolute;
+    left: -999px;
+    top: -999px;
+    overflow: hidden;
+    opacity: 0;
+}
