@@ -40,7 +40,7 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <input type='hidden' name='id' value='2'>
+                    <input type='hidden' name='id' value='5'>
                     @include('pages.partials.diets.diets.form-modal')
                 </div>
                 <div class="modal-footer">
@@ -69,7 +69,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Zamknij</button>
-                    <button type="button" class="btn btn-primary">Dodaj klienta</button>
+                    <button type="button" class="btn btn-primary">Dodaj dietę</button>
                 </div>
             </form>
         </div>

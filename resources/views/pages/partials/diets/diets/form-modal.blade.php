@@ -77,3 +77,25 @@
         </div>
     </div>
 </div>
+<div class="row mt-3">
+    <div class="col-md-6">
+        <div class="form-group">
+            <label for="diet_exclusion">Wykluczenia</label>
+            <select name="diet_exclusion" class="js-example-basic-multiple w-100" multiple="">
+                <option value="">Bez mięsa</option>
+                <option value="">Bez glutenu</option>
+                <option value="">Bez laktozy</option>
+            </select>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="form-group">
+            <label for="diet_addons">Produkty dodatkowe</label>
+            <select name="diet_addons" class="js-example-basic-multiple w-100" multiple="">
+                <option value="">Szejk owocowy</option>
+                <option value="">Zestaw sztućców</option>
+                <option value="">Eko pudełka</option>
+            </select>
+        </div>
+    </div>
+</div>
