@@ -24,6 +24,10 @@ Route::group(['prefix' => 'settings'], function(){
     Route::get('dictionary', function () { return view('pages.modules.settings.dictionary', ['title' => "Słownik"]); });
 });
 
+Route::group(['prefix' => 'auth'], function(){
+    Route::get('/', function () { return view('pages.auth.index', ['title' => "Logowanie"]); });
+});
+
 /*
 Routy globalne
 */

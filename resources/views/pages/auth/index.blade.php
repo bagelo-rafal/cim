@@ -7,10 +7,10 @@
     <div class="col-md-8 col-xl-6 mx-auto">
       <div class="card">
         <div class="row">
-          <div class="col-md-12 pl-md-0">
-            <div class="auth-form-wrapper py-5">
-              <a href="#" class="noble-ui-logo d-block mb-2">BeWell</a>
-              <h5 class="text-muted font-weight-normal mb-4">Witaj w BeWell! Zaloguj się do swojego konta</h5>
+          <div class="col-md-12">
+            <div class="auth-form-wrapper py-5 mx-5">
+              <img height="70px;" src="https://www.cudimiod.pl/wp-content/uploads/2016/12/logo-04.19.png" />
+              <h5 class="text-muted font-weight-normal mb-4 mt-3">Witaj w Cud i Miód! Zaloguj się do swojego konta</h5>
               <form id="login-form" class="forms-sample" method="POST">
                   @csrf
                 <div class="form-group">
