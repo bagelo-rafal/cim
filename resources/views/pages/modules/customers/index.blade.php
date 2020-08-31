@@ -42,6 +42,19 @@
                 <div class="modal-body">
                     <input type='hidden' name='id' value='2'>
                     @include('pages.partials.auth.register-form')
+                    <div class="data1 mb-3">
+                        <div class="row">
+                            <div class="col-md-12 mb-3">
+                                <h4>Opcjonalne notatki o kliencie</h4>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="customer_notes">Dodaj ważne notatki o tym kliencie</label>
+                                    <textarea class="form-control" name="customer_notes" rows="8"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Zamknij</button>
@@ -66,6 +79,19 @@
                 </div>
                 <div class="modal-body">
                     @include('pages.partials.auth.register-form')
+                    <div class="data1 mb-3">
+                        <div class="row">
+                            <div class="col-md-12 mb-3">
+                                <h4>Opcjonalne notatki o kliencie</h4>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="customer_notes">Dodaj ważne notatki o tym kliencie</label>
+                                    <textarea class="form-control" name="customer_notes" rows="8"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Zamknij</button>
