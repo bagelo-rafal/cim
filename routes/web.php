@@ -26,6 +26,7 @@ Route::group(['prefix' => 'settings'], function(){
 
 Route::group(['prefix' => 'auth'], function(){
     Route::get('/', function () { return view('pages.auth.index', ['title' => "Logowanie"]); });
+    Route::get('/register', function () { return view('pages.auth.register', ['title' => "Logowanie"]); });
 });
 
 /*
