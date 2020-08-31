@@ -28,7 +28,8 @@ Route::group(['prefix' => 'auth'], function(){
     Route::get('/', function () { return view('pages.auth.index', ['title' => "Logowanie"]); });
     Route::get('/register', function () { return view('pages.auth.register', ['title' => "Logowanie"]); });
     Route::get('/reset', function () { return view('pages.auth.reset-password', ['title' => "Resetuj hasło"]); });
-    Route::get('/set', function () { return view('pages.auth.set-password', ['title' => "Ustaw nowe hasło"]); });
+    Route::get('/set', function () { return view('pages.auth.set-password', ['title' => "Aktywuj konto"]); });
+    Route::get('/new', function () { return view('pages.auth.new-password', ['title' => "Ustaw nowe hasło"]); });
 });
 
 /*

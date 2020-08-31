@@ -8,7 +8,7 @@
       <div class="card">
         <div class="row">
           <div class="col-md-12 pl-md-0">
-            <div class="auth-form-wrapper py-5">
+            <div class="auth-form-wrapper py-5 mx-5">
               <a href="#" class="noble-ui-logo d-block mb-2">Reset hasła</a>
               <h5 class="text-muted font-weight-normal mb-4">Ustaw poniżej nowe hasło</h5>
               <form id="password-reset" class="forms-sample" action="" method="post">
