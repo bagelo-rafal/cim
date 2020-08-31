@@ -17,11 +17,7 @@ Routy administratora
 
 Route::group(['prefix' => 'dashboard'], function(){
     Route::get('customers', function () { return view('pages.modules.customers.index', ['title' => "Zarządzanie klientami"]); });
-<<<<<<< HEAD
     Route::get('customers/reviews', function () { return view('pages.modules.customers.reviews', ['title' => "Opinie klientów"]); });
-=======
-    Route::get('customers/reviews', function () { return view('pages.modules.customers.reviews', ['title' => "Zarządzanie klientami"]); });
->>>>>>> 63c2b144d848de34c9275bc7b2cb17f3477c8114
     Route::get('diet', function () { return view('pages.modules.diets.diets.index', ['title' => "Zarządzanie dietami"]); });
 });
 
