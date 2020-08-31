@@ -24,7 +24,7 @@
               <i data-feather="edit"></i>
           </button>
           <a class="remove" href="#">
-            <button type="button" onclick="showSwal('passing-parameter-execute-cancel')" class="btn btn-sm btn-danger btn-icon">
+            <button type="button" class="btn btn-sm btn-danger btn-icon">
                 <i data-feather="trash-2"></i>
             </button>
           </a>

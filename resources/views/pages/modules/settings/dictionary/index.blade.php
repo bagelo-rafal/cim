@@ -1,4 +1,4 @@
-{{-- W tym widoku wyświetlamy listę pwszystkich klientów + możemy edytować/dodawać klientów w modalach --}}
+{{-- W tym widoku wyświetlamy słownik --}}
 @extends('layout.master')
 
 @push('plugin-styles')
