@@ -23,7 +23,7 @@
     <!-- end plugin css -->
 
     @stack('plugin-styles')
-    
+
     <link href="{{ asset('assets/plugins/sweetalert2/sweetalert2.min.css') }}" rel="stylesheet" />
 
     <!-- common css -->
@@ -38,9 +38,8 @@
     {!! Html::script('/assets/js/spinner.js') !!}
 
     <div class="main-wrapper" id="app">
-        @include('layout.sidebar')
+        @include('layout.header')
         <div class="page-wrapper">
-            @include('layout.header')
             <div class="page-content">
                 @yield('content')
             </div>
