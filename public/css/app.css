@@ -20039,13 +20039,15 @@ address p {
     margin-bottom: 0;
 }
 .horizontal-menu .bottom-navbar .page-navigation > .nav-item > .nav-link {
-    color: #000;
-    padding: 22px 10px;
+    color: #333;
+    padding: 15px 10px;
     line-height: 1;
     font-weight: 400;
 }
 .horizontal-menu .bottom-navbar .page-navigation > .nav-item > .nav-link .menu-title {
     font-size: 14px;
+    font-family: Lato;
+    font-weight: 400;
 }
 .horizontal-menu .bottom-navbar .page-navigation > .nav-item > .nav-link .link-icon {
     margin-right: 10px;
@@ -20186,7 +20188,7 @@ address p {
 @media (min-width: 768px) {
     .horizontal-menu .bottom-navbar .page-navigation > .nav-item:not(.mega-menu) .submenu {
         position: absolute;
-        top: 61px;
+        top: 48px;
         z-index: 999;
         background: #fff;
         border-top: none;
@@ -26135,4 +26137,7 @@ width: 20%;
 }
 .dt-button.buttons-print.btn.btn-outline-primary.btn-icon-text.mr-2.mb-2.mb-md-0 {
     float: right;
+}
+.column-search {
+    width: 100%;
 }
