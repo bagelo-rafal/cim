@@ -22,11 +22,31 @@ $(document).ready(function() {
         buttons: [{
                 extend: 'excelHtml5',
                 className: 'btn btn-outline-primary btn-icon-text mr-2 mb-2 mb-md-0 export-excel',
-                text: '<i class="fas fa-file-excel"></i>'
+                text: '<i class="fas fa-file-excel"></i>',
+                attr: {
+                  'data-toggle': 'tooltip',
+                  'data-placement': 'top',
+                  'title': 'Export do Excel'
+                }
             },
             {
-                text: '<i class="fas fa-search"></i>',
-                className: 'btn btn-outline-primary btn-icon-text mr-2 mb-2 mb-md-0 search-toggle'
+                text: '<i class="fas fa-filter"></i>',
+                className: 'btn btn-outline-primary btn-icon-text mr-2 mb-2 mb-md-0 search-toggle',
+                attr: {
+                  'data-toggle': 'tooltip',
+                  'data-placement': 'top',
+                  'title': 'Filtruj tabelę'
+                }
+            },
+            {
+                extend: 'print',
+                text: '<i class="fas fa-print"></i>',
+                className: 'btn btn-outline-primary btn-icon-text mr-2 mb-2 mb-md-0',
+                attr: {
+                  'data-toggle': 'tooltip',
+                  'data-placement': 'top',
+                  'title': 'Drukuj widoczne'
+                }
             }
         ]
     });
