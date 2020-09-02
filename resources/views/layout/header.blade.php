@@ -71,6 +71,13 @@
                                                         <li class="nav-item"><a class="nav-link" href="{{ url('/dashboard/diets/addons/#add') }}">Dodaj produkt</a></li>
                                                     </ul>
                                                 </div>
+                                                <div class="col-md-4">
+                                                    <ul>
+                                                        <li class="category-heading">Menu</li>
+                                                        <li class="nav-item"><a class="nav-link" href="{{ url('/dashboard/diets/menu') }}">Pokaż całe menu</a></li>
+                                                        <li class="nav-item"><a class="nav-link" href="{{ url('/dashboard/diets/menu/#add') }}">Dodaj menu</a></li>
+                                                    </ul>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>

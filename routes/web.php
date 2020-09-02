@@ -22,6 +22,7 @@ Route::group(['prefix' => 'dashboard'], function(){
     Route::get('diets/variants', function () { return view('pages.modules.diets.variants.index', ['title' => "Warianty kaloryczne"]); });
     Route::get('diets/types', function () { return view('pages.modules.diets.types.index', ['title' => "Typy diet"]); });
     Route::get('diets/addons', function () { return view('pages.modules.diets.addons.index', ['title' => "Produkty dodatkowe"]); });
+    Route::get('diets/menu', function () { return view('pages.modules.diets.menu.index', ['title' => "Menu"]); });
 });
 
 Route::group(['prefix' => 'settings'], function(){

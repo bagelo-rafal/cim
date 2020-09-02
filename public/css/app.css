@@ -2530,7 +2530,7 @@ pre code {
 }
 @media (min-width: 1200px) {
     .container {
-        max-width: 1240px;
+        max-width: 100%;
     }
 }
 .container-fluid {
@@ -19341,7 +19341,7 @@ address p {
 }
 @media (min-width: 1200px) {
     .page-wrapper .page-content {
-        max-width: 1240px;
+        max-width: 100%;
     }
 }
 .page-wrapper .page-content .content-nav-wrapper {
@@ -19994,8 +19994,8 @@ address p {
     position: relative;
     width: 100%;
     z-index: 99;
-    -webkit-box-pack: justify;
-    justify-content: space-between;
+    -webkit-box-pack: start;
+    justify-content: start;
     -webkit-transition-duration: 0.2s;
     transition-duration: 0.2s;
     -webkit-transition-property: background, box-shadow;
@@ -26143,4 +26143,14 @@ width: 20%;
 }
 .addon-price::before {
     content: '+ ';
+}
+.select2-selection.select2-selection--single {
+    padding: 10.5px 10px;
+}
+input[type="number"], input[type="text"], input[type="email"] {
+    height: 37px;
+}
+.last_use {
+    display: block;
+    font-size: 12px;
 }
