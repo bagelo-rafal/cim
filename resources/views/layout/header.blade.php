@@ -45,6 +45,20 @@
                 </li>
                 <li class="nav-item {{ active_class(['/']) }}">
                     <a href="#" class="nav-link">
+                        <i class="link-icon fas fa-users"></i>
+                        <span class="menu-title">Diety</span>
+                        <i class="link-arrow"></i>
+                    </a>
+                    <div class="submenu">
+                        <ul class="submenu-item">
+                            <li class="category-heading">Zarządzanie dietami</li>
+                            <li class="nav-item"><a class="nav-link" href="{{ url('/dashboard/diets') }}">Wszystkie diety</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{{ url('/dashboard/diets/variants') }}">Warianty kaloryczne</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item {{ active_class(['/']) }}">
+                    <a href="#" class="nav-link">
                         <i class="link-icon fas fa-cog"></i>
                         <span class="menu-title">Ustawienia</span>
                         <i class="link-arrow"></i>
