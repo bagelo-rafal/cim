@@ -23,7 +23,7 @@ Route::group(['prefix' => 'dashboard'], function(){
 });
 
 Route::group(['prefix' => 'settings'], function(){
-    Route::get('dictionary', function () { return view('pages.modules.settings.dictionary', ['title' => "Słownik"]); });
+    Route::get('dictionary', function () { return view('pages.modules.settings.dictionary.index', ['title' => "Słownik"]); });
 });
 
 Route::group(['prefix' => 'auth'], function(){

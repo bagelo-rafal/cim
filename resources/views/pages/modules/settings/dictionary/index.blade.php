@@ -13,7 +13,7 @@
                 <div class="row align-items-start mb-2">
                     <div class="col-md-12">
                         <form id="dictionary">
-                            @include('pages.partials.settings.dictionary')
+                            @include('pages.partials.settings.dictionary.form')
                         </form>
                     </div>
                 </div>
