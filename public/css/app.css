@@ -2530,7 +2530,7 @@ pre code {
 }
 @media (min-width: 1200px) {
     .container {
-        max-width: 1140px;
+        max-width: 1240px;
     }
 }
 .container-fluid {
@@ -19341,7 +19341,7 @@ address p {
 }
 @media (min-width: 1200px) {
     .page-wrapper .page-content {
-        max-width: 1140px;
+        max-width: 1240px;
     }
 }
 .page-wrapper .page-content .content-nav-wrapper {
@@ -20060,8 +20060,8 @@ address p {
 .horizontal-menu .bottom-navbar .page-navigation > .nav-item > .nav-link .link-arrow {
     margin-left: 5px;
     display: inline-block;
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
     moz-transform-origin: center;
     -webkit-transform-origin: center;
     transform-origin: center;

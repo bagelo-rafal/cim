@@ -67,7 +67,7 @@
 
 {{-- Modal dodawanie klienta --}}
 
-<div class="modal fade customer-add-modal" role="dialog" aria-labelledby="addCustomerModal" aria-hidden="true">
+<div id="add-customer" class="modal fade customer-add-modal" role="dialog" aria-labelledby="addCustomerModal" aria-hidden="true">
     <div class="modal-dialog modal-xl">
         <div class="modal-content">
             <form id="add-customer">
@@ -120,6 +120,13 @@
         } else {
             $('.company-data').hide();
             $('.company-data input').prop('required', false);
+        }
+    });
+
+
+    $(function() {
+        if (document.location.href.indexOf('#add') > -1) {
+             $("#add-customer").modal()
         }
     });
 </script>

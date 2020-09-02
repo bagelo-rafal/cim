@@ -37,6 +37,7 @@
                         <ul class="submenu-item">
                             <li class="category-heading">Zarządzanie klientami</li>
                             <li class="nav-item"><a class="nav-link" href="{{ url('/dashboard/customers') }}">Wszyscy klienci</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{{ url('/dashboard/customers/#add') }}">Dodaj klienta</a></li>
                             <li class="category-heading">Opinie i komentarze</li>
                             <li class="nav-item"><a class="nav-link" href="{{ url('/dashboard/customers/reviews') }}">Pokaż opinie</a></li>
                         </ul>
