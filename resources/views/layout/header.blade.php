@@ -43,19 +43,40 @@
                         </ul>
                     </div>
                 </li>
-                <li class="nav-item {{ active_class(['/']) }}">
+                <li class="nav-item mega-menu {{ active_class(['/']) }}">
                     <a href="#" class="nav-link">
                         <i class="link-icon fas fa-users"></i>
                         <span class="menu-title">Diety</span>
                         <i class="link-arrow"></i>
                     </a>
                     <div class="submenu">
-                        <ul class="submenu-item">
-                            <li class="category-heading">Zarządzanie dietami</li>
-                            <li class="nav-item"><a class="nav-link" href="{{ url('/dashboard/diets') }}">Wszystkie diety</a></li>
-                            <li class="nav-item"><a class="nav-link" href="{{ url('/dashboard/diets/variants') }}">Warianty kaloryczne</a></li>
-                            <li class="nav-item"><a class="nav-link" href="{{ url('/dashboard/diets/types') }}">Typy diet</a></li>
-                        </ul>
+                        <div class="col-group-wrapper row">
+                            <div class="col-group col-md-9">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="submenu-item">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <ul>
+                                                        <li class="category-heading">Zarządzanie dietami</li>
+                                                        <li class="nav-item"><a class="nav-link" href="{{ url('/dashboard/diets') }}">Wszystkie diety</a></li>
+                                                        <li class="nav-item"><a class="nav-link" href="{{ url('/dashboard/diets/variants') }}">Warianty kaloryczne</a></li>
+                                                        <li class="nav-item"><a class="nav-link" href="{{ url('/dashboard/diets/types') }}">Typy diet</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <ul>
+                                                        <li class="category-heading">Produkty dodatkowe</li>
+                                                        <li class="nav-item"><a class="nav-link" href="{{ url('/dashboard/diets/addons') }}">Wszystkie produkty</a></li>
+                                                        <li class="nav-item"><a class="nav-link" href="{{ url('/dashboard/diets/addons/#add') }}">Dodaj produkt</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </li>
                 <li class="nav-item {{ active_class(['/']) }}">

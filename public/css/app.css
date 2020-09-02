@@ -20236,7 +20236,7 @@ address p {
 @media (min-width: 768px) {
     .horizontal-menu .bottom-navbar .page-navigation > .nav-item.mega-menu .submenu {
         position: absolute;
-        top: 61px;
+        top: 48px;
         z-index: 999;
         background: #fff;
         border-top: none;
@@ -26140,4 +26140,7 @@ width: 20%;
 }
 .column-search {
     width: 100%;
+}
+.addon-price::before {
+    content: '+ ';
 }
