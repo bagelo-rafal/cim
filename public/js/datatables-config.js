@@ -4,10 +4,10 @@ $('body').on('click', '.search-toggle', function() {
     $('.filter-column').toggle();
 });
 
-/* Tabela z klientami */
+/* Tabele */
 
 $(document).ready(function() {
-    var table = $('#customers-table, #diets-table, #reviews-table, #variants-table').DataTable({
+    var table = $('#customers-table, #diets-table, #reviews-table, #variants-table, #types-table').DataTable({
         "language": {
             "url": "https://cdn.datatables.net/plug-ins/1.10.20/i18n/Polish.json"
         },

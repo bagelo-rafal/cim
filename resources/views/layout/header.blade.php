@@ -54,6 +54,7 @@
                             <li class="category-heading">Zarządzanie dietami</li>
                             <li class="nav-item"><a class="nav-link" href="{{ url('/dashboard/diets') }}">Wszystkie diety</a></li>
                             <li class="nav-item"><a class="nav-link" href="{{ url('/dashboard/diets/variants') }}">Warianty kaloryczne</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{{ url('/dashboard/diets/types') }}">Typy diet</a></li>
                         </ul>
                     </div>
                 </li>
