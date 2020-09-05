@@ -7,7 +7,7 @@ $('body').on('click', '.search-toggle', function() {
 /* Tabele */
 
 $(document).ready(function() {
-    var table = $('#customers-table, #diets-table, #reviews-table, #variants-table, #types-table, #addons-table, #menu-table').DataTable({
+    var table = $('#customers-table, #diets-table, #reviews-table, #variants-table, #types-table, #addons-table, #menu-table, #workers-table, #dish-table').DataTable({
         "language": {
             "url": "https://cdn.datatables.net/plug-ins/1.10.20/i18n/Polish.json"
         },

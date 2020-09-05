@@ -26151,3 +26151,25 @@ width: 20%;
 .form-control {
     width: 100%;
 }
+.select2-selection.select2-selection--single {
+    height: 32px;
+}
+.fixed-sizes-block {
+  display: none;
+}
+#select2-create-dish-count-type-container {
+  padding-right: 20px;
+}
+#dish-table {
+    width: 100% !important;
+}
+#dish-table_wrapper .dt-buttons {
+  display: none;
+}
+#dish-table_info, #dish-table_paginate {
+    display: none;
+}
+tfoot {
+    background-color: #333;
+    color: #FFF;
+}
