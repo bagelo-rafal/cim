@@ -29,6 +29,11 @@ Route::group(['prefix' => 'settings'], function(){
     Route::get('dictionary', function () { return view('pages.modules.settings.dictionary.index', ['title' => "Słownik"]); });
 });
 
+Route::group(['prefix' => 'dashboard/staff'], function(){
+    Route::get('/', function () { return view('pages.modules.staff.workers.index', ['title' => "Zarządzanie pracownikami"]); });
+    Route::get('/role', function () { return view('pages.modules.staff.roles.index', ['title' => "Role i uprawnienia"]); });
+});
+
 Route::group(['prefix' => 'auth'], function(){
     Route::get('/', function () { return view('pages.auth.index', ['title' => "Logowanie"]); });
     Route::get('/register', function () { return view('pages.auth.register', ['title' => "Rejestracja"]); });

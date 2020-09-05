@@ -45,7 +45,7 @@
                 </li>
                 <li class="nav-item mega-menu {{ active_class(['/']) }}">
                     <a href="#" class="nav-link">
-                        <i class="link-icon fas fa-users"></i>
+                        <i class="link-icon fas fa-file-alt"></i>
                         <span class="menu-title">Diety</span>
                         <i class="link-arrow"></i>
                     </a>
@@ -84,6 +84,19 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </li>
+                <li class="nav-item {{ active_class(['/']) }}">
+                    <a href="#" class="nav-link">
+                        <i class="link-icon fas fa-user"></i>
+                        <span class="menu-title">Pracownicy</span>
+                        <i class="link-arrow"></i>
+                    </a>
+                    <div class="submenu">
+                        <ul class="submenu-item">
+                            <li class="nav-item"><a class="nav-link" href="{{ url('/dashboard/staff') }}">Zarządzanie pracownikami</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{{ url('/dashboard/staff/roles') }}">Role i uprawnienia</a></li>
+                        </ul>
                     </div>
                 </li>
                 <li class="nav-item {{ active_class(['/']) }}">
