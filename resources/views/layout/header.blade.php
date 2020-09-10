@@ -43,7 +43,7 @@
                         </ul>
                     </div>
                 </li>
-                <li class="nav-item mega-menu {{ active_class(['/']) }}">
+                <li class="nav-item {{ active_class(['/']) }}">
                     <a href="#" class="nav-link">
                         <i class="link-icon fas fa-file-alt"></i>
                         <span class="menu-title">Diety</span>
@@ -51,12 +51,12 @@
                     </a>
                     <div class="submenu">
                         <div class="col-group-wrapper row">
-                            <div class="col-group col-md-9">
+                            <div class="col-group col-md-12">
                                 <div class="row">
                                     <div class="col-12">
                                         <div class="submenu-item">
                                             <div class="row">
-                                                <div class="col-md-4">
+                                                <div class="col-md-6">
                                                     <ul>
                                                         <li class="category-heading">Zarządzanie dietami</li>
                                                         <li class="nav-item"><a class="nav-link" href="{{ url('/dashboard/diets') }}">Wszystkie diety</a></li>
@@ -64,18 +64,27 @@
                                                         <li class="nav-item"><a class="nav-link" href="{{ url('/dashboard/diets/types') }}">Typy diet</a></li>
                                                     </ul>
                                                 </div>
-                                                <div class="col-md-4">
+                                                <div class="col-md-6">
+                                                    <ul>
+                                                        <li class="category-heading">Menu</li>
+                                                        <li class="nav-item"><a class="nav-link" href="{{ url('/dashboard/diets/menu') }}">Pokaż całe menu</a></li>
+                                                        <li class="nav-item"><a class="nav-link" href="{{ url('/dashboard/diets/menu/#add') }}">Dodaj menu</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
                                                     <ul>
                                                         <li class="category-heading">Produkty dodatkowe</li>
                                                         <li class="nav-item"><a class="nav-link" href="{{ url('/dashboard/diets/addons') }}">Wszystkie produkty</a></li>
                                                         <li class="nav-item"><a class="nav-link" href="{{ url('/dashboard/diets/addons/#add') }}">Dodaj produkt</a></li>
                                                     </ul>
                                                 </div>
-                                                <div class="col-md-4">
+                                                <div class="col-md-6">
                                                     <ul>
-                                                        <li class="category-heading">Menu</li>
-                                                        <li class="nav-item"><a class="nav-link" href="{{ url('/dashboard/diets/menu') }}">Pokaż całe menu</a></li>
-                                                        <li class="nav-item"><a class="nav-link" href="{{ url('/dashboard/diets/menu/#add') }}">Dodaj menu</a></li>
+                                                        <li class="category-heading">Posiłki</li>
+                                                        <li class="nav-item"><a class="nav-link" href="{{ url('/dashboard/diets/meal') }}">Wszystkie posiłki</a></li>
+                                                        <li class="nav-item"><a class="nav-link" href="{{ url('/dashboard/diets/meal/#add') }}">Dodaj posiłek</a></li>
                                                     </ul>
                                                 </div>
                                             </div>
