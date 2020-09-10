@@ -9,7 +9,6 @@
     <div class="col-md-12 mb-3">
         <a href="#" class="btn btn-sm btn-success" data-toggle="modal" data-target=".meal-add-modal" tabindex="-1" role="button" aria-disabled="false">Dodaj posiłek</a>
     </div>
-    test
 </div>
 <div class="row">
     <div class="col-12 col-xl-12 grid-margin stretch-card">
