@@ -3,7 +3,7 @@
         <div class="container">
             <div class="navbar-content">
                 <a href="#" class="navbar-brand">
-                    <img style="margin-right:5px;" height="50px;" src="https://www.cudimiod.pl/wp-content/uploads/2016/12/logo-04.19.png" /><span style="padding-top: 4px;">CRM</span>
+                    <img style="margin-right:5px;" height="50px;" src="https://cudimiod.pl/wp-content/uploads/2020/02/logo-04.19.png" /><span style="padding-top: 4px;">CRM</span>
                 </a>
                 <form class="search-form">
                     <div class="input-group">
@@ -85,6 +85,15 @@
                                                         <li class="category-heading">Posiłki</li>
                                                         <li class="nav-item"><a class="nav-link" href="{{ url('/dashboard/diets/meal') }}">Wszystkie posiłki</a></li>
                                                         <li class="nav-item"><a class="nav-link" href="{{ url('/dashboard/diets/meal/#add') }}">Dodaj posiłek</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <ul>
+                                                        <li class="category-heading">Składniki</li>
+                                                        <li class="nav-item"><a class="nav-link" href="{{ url('/dashboard/diets/ingredients') }}">Wszystkie składniki</a></li>
+                                                        <li class="nav-item"><a class="nav-link" href="{{ url('/dashboard/diets/ingredients/#add') }}">Dodaj składnik</a></li>
                                                     </ul>
                                                 </div>
                                             </div>

@@ -24,6 +24,7 @@ Route::group(['prefix' => 'dashboard'], function(){
     Route::get('diets/addons', function () { return view('pages.modules.diets.addons.index', ['title' => "Produkty dodatkowe"]); });
     Route::get('diets/menu', function () { return view('pages.modules.diets.menu.index', ['title' => "Menu"]); });
     Route::get('diets/meal', function () { return view('pages.modules.diets.meal.meal.index', ['title' => "Posiłki"]); });
+    Route::get('diets/ingredients', function () { return view('pages.modules.diets.ingredients.index', ['title' => "Składniki"]); });
 });
 
 Route::group(['prefix' => 'settings'], function(){
