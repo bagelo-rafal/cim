@@ -30,6 +30,12 @@ Route::group(['prefix' => 'settings'], function(){
     Route::get('dictionary', function () { return view('pages.modules.settings.dictionary.index', ['title' => "Słownik"]); });
 });
 
+Route::group(['prefix' => 'dashboard/logistic'], function(){
+    Route::get('/', function () { return view('pages.modules.logistic.zones.index', ['title' => "Strefy dostaw"]); });
+    Route::get('/zone/edit', function () { return view('pages.modules.logistic.zones.edit', ['title' => "Edycja strefy dostawy"], ['type' => "edit"]); });
+    Route::get('/zone/add', function () { return view('pages.modules.logistic.zones.add', ['title' => "Dodaj strefę dostawy"], ['type' => "add"]); });
+});
+
 Route::group(['prefix' => 'dashboard/staff'], function(){
     Route::get('/', function () { return view('pages.modules.staff.workers.index', ['title' => "Zarządzanie pracownikami"]); });
     Route::get('/role', function () { return view('pages.modules.staff.roles.index', ['title' => "Role i uprawnienia"]); });

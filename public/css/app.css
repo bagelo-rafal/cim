@@ -20047,7 +20047,7 @@ address p {
 }
 .horizontal-menu .bottom-navbar .page-navigation > .nav-item > .nav-link .menu-title {
     font-size: 14px;
-    font-family: Lato;
+    font-family: Overpass, sans-serif;
     font-weight: 400;
 }
 .horizontal-menu .bottom-navbar .page-navigation > .nav-item > .nav-link .link-icon {
