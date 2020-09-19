@@ -38,6 +38,7 @@ Route::group(['prefix' => 'dashboard/logistic'], function(){
     Route::get('/', function () { return view('pages.modules.logistic.zones.index', ['title' => "Strefy dostaw"]); });
     Route::get('/zone/edit', function () { return view('pages.modules.logistic.zones.edit', ['title' => "Edycja strefy dostawy"], ['type' => "edit"]); });
     Route::get('/zone/add', function () { return view('pages.modules.logistic.zones.add', ['title' => "Dodaj strefę dostawy"], ['type' => "add"]); });
+    Route::get('/report', function () { return view('pages.modules.logistic.report', ['title' => "Raport dostaw"]); });
 });
 
 Route::group(['prefix' => 'dashboard/staff'], function(){
