@@ -69,7 +69,11 @@
 
     @stack('custom-scripts')
     {!! Html::script('js/datepicker-config.js') !!}
+
+    @if ($title != "Potrawy")
     {!! Html::script('js/datatables-config.js') !!}
+    @endif
+
     {!! Html::script('js/select2-config.js') !!}
     {!! Html::script('js/custom-scripts.js') !!}
     <script src="{{ asset('assets/js/sweet-alert.js') }}"></script>

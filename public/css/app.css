@@ -26164,13 +26164,19 @@ width: 20%;
 #dish-table {
     width: 100% !important;
 }
+#dish-ingr-table {
+    width: 100% !important;
+}
 #dish-table_wrapper .dt-buttons {
   display: none;
 }
-#dish-table_info, #dish-table_paginate {
+#dish-table_info, #dish-table_paginate, #dish-ingr-table_info, #dish-ingr-table_paginate {
     display: none;
 }
 tfoot {
     background-color: #333;
     color: #FFF;
+}
+#dish-ingr-table_wrapper .dt-buttons {
+    display: none;
 }

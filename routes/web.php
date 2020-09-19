@@ -25,11 +25,14 @@ Route::group(['prefix' => 'dashboard'], function(){
     Route::get('diets/menu', function () { return view('pages.modules.diets.menu.index', ['title' => "Menu"]); });
     Route::get('diets/meal', function () { return view('pages.modules.diets.meal.meal.index', ['title' => "Posiłki"]); });
     Route::get('diets/ingredients', function () { return view('pages.modules.diets.ingredients.index', ['title' => "Składniki"]); });
+    Route::get('diets/dish', function () { return view('pages.modules.diets.dish.index', ['title' => "Potrawy"]); });
 });
 
 Route::group(['prefix' => 'settings'], function(){
     Route::get('dictionary', function () { return view('pages.modules.settings.dictionary.index', ['title' => "Słownik"]); });
 });
+
+Route::get('/', function () { return view('pages.auth.index', ['title' => "Logowanie"]); });
 
 Route::group(['prefix' => 'dashboard/logistic'], function(){
     Route::get('/', function () { return view('pages.modules.logistic.zones.index', ['title' => "Strefy dostaw"]); });

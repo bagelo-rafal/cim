@@ -96,6 +96,13 @@
                                                         <li class="nav-item"><a class="nav-link" href="{{ url('/dashboard/diets/ingredients/#add') }}">Dodaj składnik</a></li>
                                                     </ul>
                                                 </div>
+                                                <div class="col-md-6">
+                                                    <ul>
+                                                        <li class="category-heading">Potrawy</li>
+                                                        <li class="nav-item"><a class="nav-link" href="{{ url('/dashboard/diets/dish') }}">Wszystkie potrawy</a></li>
+                                                        <li class="nav-item"><a class="nav-link" href="{{ url('/dashboard/diets/dish/#add') }}">Dodaj potrawę</a></li>
+                                                    </ul>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
