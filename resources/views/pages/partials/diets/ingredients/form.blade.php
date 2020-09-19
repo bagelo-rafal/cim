@@ -1,4 +1,4 @@
-   
+
     <div class="form-group">
         <label for="{{$type}}_ingr_name" class="form-control-label">Nazwa składnika</label>
         <input id="{{$type}}_ingr_name" name="{{$type}}_ingr_name" type="text" value="" class="form-control">
@@ -43,19 +43,15 @@
         <label for="{{$type}}_ingr_tluszcze" class="form-control-label">Ilość tłuszczów</label>
         <input id="{{$type}}_ingr_tluszcze" name="{{$type}}_ingr_tluszcze" type="number" value="" class="form-control">
     </div>
+    <div class="form-group">
+        <label for="{{$type}}_ingr_sol" class="form-control-label">Ilość soli</label>
+        <input id="{{$type}}_ingr_sol" name="{{$type}}_ingr_sol" type="number" value="" class="form-control">
+    </div>
     <h5>Pozostałe informacje</h5>
     <div class="form-group">
         <label for="{{$type}}_ingr_wot" class="form-control-label">Wartość obróbki termicznej</label>
         <input id="{{$type}}_ingr_wot" name="{{$type}}_ingr_wot" type="number" value="0" class="form-control">
         <small class="form-text text-muted">Procentowa wartość utraty wagi składnika po obróbce termicznej</small>
-    </div>
-    <div class="form-group">
-        <label for="{{$type}}_ingr_wykluczenia" class="form-control-label">Wykluczenia</label>
-        <select id="{{$type}}_ingr_wykluczenia" name="{{$type}}_ingr_wykluczenia" multiple="true"
-            class="js-example-basic-multiple form-control">
-            <option value="option-1">Option 1</option>
-            <option value="option-2">Option 2</option>
-        </select>
     </div>
     <div class="form-group">
         <label for="{{$type}}_ingr_alergeny" class="form-control-label">Alergeny</label>

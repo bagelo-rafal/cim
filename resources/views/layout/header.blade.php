@@ -126,6 +126,19 @@
                 </li>
                 <li class="nav-item {{ active_class(['/']) }}">
                     <a href="#" class="nav-link">
+                        <i class="link-icon fas fa-truck"></i>
+                        <span class="menu-title">Logistyka</span>
+                        <i class="link-arrow"></i>
+                    </a>
+                    <div class="submenu">
+                        <ul class="submenu-item">
+                            <li class="nav-item"><a class="nav-link" href="{{ url('/dashboard/logistic') }}">Strefy dostaw</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{{ url('/dashboard/logistic/report') }}">Raport dostawy</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item {{ active_class(['/']) }}">
+                    <a href="#" class="nav-link">
                         <i class="link-icon fas fa-cog"></i>
                         <span class="menu-title">Ustawienia</span>
                         <i class="link-arrow"></i>
