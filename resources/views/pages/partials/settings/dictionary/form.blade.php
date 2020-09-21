@@ -19,6 +19,14 @@
     </div>
 </div>
 <div class="row mt-3">
+    <div class="col-md-4">
+        <div class="form-group">
+            <label for="fixed_sizes">Stałe wielkości</label>
+            <textarea class="form-control" id="fixed_sizes" name="fixed_sizes" rows="8"></textarea>
+        </div>
+    </div>
+</div>
+<div class="row mt-3">
     <div class="col-md-12">
         <button type="submit" class="btn btn-primary mr-2">Zapisz</button>
     </div>
